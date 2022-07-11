@@ -1,0 +1,3 @@
+At my current company, we recently wanted to test out an automated email-sending application. Due to Google no longer allowing insecure apps to access google accounts we had to implement OAuth authentication for the application. This was not entirely straightforward as we discovered. Luckily I have a lot of experience with OAuth and was able to put it all together. I made an tutorial for internal company use but decided that it could be made public as a help article. I am posting it here for anyone else to read or share to anyone implementing their own automated emailing applications in Python.
+
+https://taylorgrubbs.online/wordpress/index.php/2022/07/07/how-to-send-emails-with-python-over-gmail-using-oauth/

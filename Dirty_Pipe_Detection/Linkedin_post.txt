@@ -1,0 +1,7 @@
+Recently I have started to look more deeply into how modern computer exploits work and I've been playing with the Dirty Pipe vulnerability (CVE-2022-0847) over the past week or so. It is newish- having been reported in March of this year- and is quite easy to run on an older Linux kernel. 
+
+I am interested in how to write code that can detect exploits/intrustions when they first occur so I decided to try this with the Dirty Pipe vulnerabililty.
+
+By configuring Linux auditd logs and Wazuh as an EDR, I have made a simple setup to detect this exploit in real time. If this is at all interesting to you, please read about it at the link below. And if there are extra details I should provide or feel free to comment or message me.
+
+https://taylorgrubbs.online/wordpress/index.php/2022/07/09/how-to-detect-a-privilege-escalation-dirty-pipe-exploit-and-wazuh-hids/
