@@ -1,0 +1,193 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% (c) 2011 Scott Clark <sc932@cornell.edu> http://cam.cornell.edu/~sc932
+%
+
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+\robustify\cftdotfill
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+%-----------------------------------------------------------
+%Margin setup
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{-0.25in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.75in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+%-----------------------------------------------------------
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+\textbf{{\Large Taylor Grubbs}} & \textbf{\today} \\
+\texttt{tegrubbs1@gmail.com} \\
+\texttt{(919)368-5087}  \\
+\href{https://github.com/tedgrubbs}{Github: github.com/tedgrubbs}  \\
+\href{https://taylorgrubbs.online/wordpress/}{Personal Website: taylorgrubbs.online/wordpress/}  \\
+\href{https://www.linkedin.com/in/taylor-grubbs/}{Linkedin: www.linkedin.com/in/taylor-grubbs/}
+
+\end{tabular*}
+
+
+%\begin{flushleft}
+%\textit{}
+
+%\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+	\ressubheading{North Carolina State University}{Raleigh, NC}{M.S.C. Physics}{2019}
+	
+
+\item
+	\ressubheading{University of North Carolina at Greensboro}{Greensboro, NC}{B.S. Physics}{2016}
+	\begin{itemize}
+		\resitem{Graduated on Chancellor's List with Minors in Chemistry and Mathematics}
+	\end{itemize}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Certifications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item 
+	CompTia \bf{Security+}, 2022
+	
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Core Skills}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+		\resitem{Python, C++, bash/shell, SQL, C\#, Java, code debugging, fast-learner, detail-oriented, GNU/Linux, Windows, system/network administration, Git, PyTorch, Computer Vision, Scikit-learn, LaTeX, technical writing, technical support}
+	\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Research and Work Experience}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+	\ressubheading{ExoCrypt Investments, LLC}{Raleigh, NC}{Data Scientist and Machine Learning Engineer}{August 2020 - May 2022}
+	\begin{itemize}
+      \resitem{Built a framework in Python and PyTorch for the rapid training and testing of deep neural networks}
+      \resitem{Used ideas adapted from image classification literature to discover unique insights about market data}
+      \resitem{Built several Python scripts to aid data annotation performed by other team members}
+      \resitem{Produced performant models that could search for rare patterns within millions of hours of market data}
+      \resitem{Performed extensive model validation to ensure expected results across different end-user devices}
+      
+	\end{itemize}
+
+
+
+\item
+	\ressubheading{NCSU Department of Physics}{Raleigh, NC}{Lead Teaching Assistant}{August 2018 - December 2019}
+	\begin{itemize}
+      \resitem{Instructed General Physics labs in electricity/magnetism and Newtonian Mechanics for undergraduate students.}
+      \resitem{As Lead TA was responsible for the instruction of lab lesson plans to other TAs}
+      \resitem{Received consistently high reviews from students regarding my communication and knowledge of the subject matter}
+	\end{itemize}
+	
+\item
+	\ressubheading{NCSU Department of Physics}{Raleigh, NC}{Brief Research Work}{December 2018 - April 2019}
+	\begin{itemize}
+      \resitem{Simulated the travel of ultracold neutrons through potential experimental setups in C++.}
+      \resitem{Performed data analysis using the CERN Root library}
+      \resitem{After leaving the project I helped instruct group members to bring them up to speed on the code's inner working so that they could continue the project.}
+    
+	\end{itemize}
+
+\item
+	\ressubheading{CData Software, Inc.}{Chapel Hill, NC}{Software Developer/Technical Support Representative}{March 2017 - July 2018}
+	\begin{itemize}
+      \resitem{Helped connect customers' databases like SQL, MySQL, etc to business intelligence sources like Salesforce, Dynamics 365, QuickBooks and dozens more }
+      \resitem{Worked at fast pace with customers and team members to solve issues quickly}
+      \resitem{Debugging and development in Java and C\#}
+      
+	\end{itemize}
+
+\item
+	\ressubheading{UNCG Department of Chemistry and Biochemistry}{Greensboro, NC}{Undergraduate Researcher - Physical Chemistry}{January 2014 - December 2016}
+	\begin{itemize}
+      \resitem{Programmed microcontroller for solar tracking of a linear Fresnel refelector }
+      \resitem{Managed the operation of laser-induced photodissociation experiments of ozone with carbon tetrachloride to create chlorine monoxide}
+      \resitem{Programmed Lua scripts in SIMION for the simulation of molecular transport to guide design of an electric molecular trap
+}
+	\end{itemize}
+
+\item
+	\ressubheading{UNCG Department of Physics and Astronomy}{Greensboro, NC}{Undergraduate Teaching Assistant - General Physics}{January 2016 - December 2016}
+	\begin{itemize}
+      \resitem{Aided the in-class instruction of advanced general physics classes}
+     
+	\end{itemize}
+
+\end{itemize}
+
+%
+
+
+
+\end{document}
