@@ -1,4 +1,4 @@
-# Website_Articles
+# Website_Material
 Contains images and documents used in my website - taylorgrubbs.online/wordpress/
 
 ## Copyright notices
