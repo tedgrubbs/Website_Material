@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.11)  30 AUG 2022 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.11)  20 SEP 2022 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -298,16 +298,16 @@ Overfull \vbox (36.135pt too high) has occurred while \output is active []
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
 
 Overfull \vbox (36.135pt too high) has occurred while \output is active []
 
 
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./TGrubbs resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `"TGrubbs resume".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -326,7 +326,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "TGrubbs resume.pdf" (2 pages, 96232 bytes).
+Output written on "TGrubbs resume.pdf" (2 pages, 96100 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
